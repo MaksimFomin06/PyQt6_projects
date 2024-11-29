@@ -253,7 +253,7 @@ class MyWidget(QMainWindow):
             self.errorLabel.hide()
 
         db = QSqlDatabase.addDatabase("QSQLITE", str(self.num))
-        db.setDatabaseName("films_db.sqlite")
+        db.setDatabaseName("PyQt6_projects/movie_search_PyQT6/films_db.sqlite")
         db.open()
 
         query = QSqlQuery(db)

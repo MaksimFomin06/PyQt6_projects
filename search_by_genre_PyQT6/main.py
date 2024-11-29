@@ -88,7 +88,7 @@ class MyWidget(QMainWindow):
 
     def request(self):
         db = QSqlDatabase.addDatabase('QSQLITE')
-        db.setDatabaseName('films_db.sqlite')
+        db.setDatabaseName('PyQt6_projects\search_by_genre_PyQT6\films_db.sqlite')
         db.open()
         
         self.tableWidget.clearContents()
